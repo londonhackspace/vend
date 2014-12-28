@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Fri 21 Feb 2014 22:38:40 GMT
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 28/12/2014 00:33:06
 
 BeginCmp
 TimeStamp = /5307BD28;
@@ -57,6 +57,13 @@ IdModule  = C2;
 EndCmp
 
 BeginCmp
+TimeStamp = /549F3E7C;
+Reference = J1;
+ValeurCmp = TI_CONN_LAUNCHPAD;
+IdModule  = Conn_Launch_Pad;
+EndCmp
+
+BeginCmp
 TimeStamp = /5307AD63;
 Reference = K1;
 ValeurCmp = CONN_3;
@@ -64,31 +71,10 @@ IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /52D83FD5;
-Reference = M1;
-ValeurCmp = ARDUINO;
-IdModule  = Arduino_rev;
-EndCmp
-
-BeginCmp
-TimeStamp = /5307C32E;
-Reference = P1;
-ValeurCmp = CONN_13X2;
-IdModule  = pin_array_13x2;
-EndCmp
-
-BeginCmp
 TimeStamp = /5307A99E;
 Reference = P2;
 ValeurCmp = CONN_25;
 IdModule  = DB25FC;
-EndCmp
-
-BeginCmp
-TimeStamp = /5307BC79;
-Reference = R1;
-ValeurCmp = n/f;
-IdModule  = R4;
 EndCmp
 
 BeginCmp
@@ -194,20 +180,6 @@ TimeStamp = /5307B5CD;
 Reference = U1;
 ValeurCmp = 5VSWREG;
 IdModule  = SWREG-X4;
-EndCmp
-
-BeginCmp
-TimeStamp = /52D8400F;
-Reference = U2;
-ValeurCmp = 74HC595;
-IdModule  = DIP-16__300;
-EndCmp
-
-BeginCmp
-TimeStamp = /52D84019;
-Reference = U3;
-ValeurCmp = 74HC595;
-IdModule  = DIP-16__300;
 EndCmp
 
 BeginCmp
