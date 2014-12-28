@@ -32,8 +32,6 @@ LIBS:valves
 LIBS:Arduino
 LIBS:2803
 LIBS:5vswreg
-LIBS:c_l_p
-LIBS:boosterpack
 LIBS:Launchpad
 LIBS:motordrive-cache
 EELAYER 27 0
@@ -594,17 +592,6 @@ F 3 "" H 5400 5100 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR024
-U 1 1 52D85104
-P 4500 4600
-F 0 "#PWR024" H 4500 4600 30  0001 C CNN
-F 1 "GND" H 4500 4530 30  0001 C CNN
-F 2 "" H 4500 4600 60  0001 C CNN
-F 3 "" H 4500 4600 60  0001 C CNN
-	1    4500 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R4
 U 1 1 52D85050
 P 6700 4750
@@ -766,8 +753,6 @@ Wire Wire Line
 Connection ~ 8400 2300
 Wire Wire Line
 	8400 1000 8400 3700
-Wire Wire Line
-	7100 4000 7100 4500
 Connection ~ 7100 5200
 Wire Wire Line
 	5900 5200 7100 5200
@@ -965,12 +950,10 @@ F 3 "~" H 4750 2150 60  0000 C CNN
 	1    4750 2150
 	0    1    1    0   
 $EndComp
-Text Label 4150 3950 0    60   ~ 0
-AREF
 Wire Wire Line
-	3600 4400 3600 5100
+	3600 3200 3600 5100
 Wire Wire Line
-	3500 6050 3500 4400
+	3500 3250 3500 6050
 Wire Wire Line
 	6900 2100 5800 2100
 Wire Wire Line
@@ -1112,11 +1095,38 @@ Wire Wire Line
 Wire Wire Line
 	3900 4100 3900 2750
 Wire Wire Line
-	7100 4000 4100 4000
+	3800 4200 9000 4200
 Wire Wire Line
-	4100 4000 4100 3950
+	3800 4200 3800 3100
 Wire Wire Line
-	2900 4200 9000 4200
+	3800 3100 2000 3100
 Wire Wire Line
-	2900 4200 2900 2750
+	2000 3100 2000 2750
+Wire Wire Line
+	3600 3200 1200 3200
+Wire Wire Line
+	1200 3200 1200 1500
+Wire Wire Line
+	1200 1500 1300 1500
+Wire Wire Line
+	1300 1500 1300 1550
+Wire Wire Line
+	3500 3250 1150 3250
+Wire Wire Line
+	1150 3250 1150 1450
+Wire Wire Line
+	1150 1450 1400 1450
+Wire Wire Line
+	1400 1450 1400 1550
+$Comp
+L +5V #PWR?
+U 1 1 549FF177
+P 7100 4500
+F 0 "#PWR?" H 7100 4590 20  0001 C CNN
+F 1 "+5V" H 7100 4590 30  0000 C CNN
+F 2 "" H 7100 4500 60  0001 C CNN
+F 3 "" H 7100 4500 60  0001 C CNN
+	1    7100 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
